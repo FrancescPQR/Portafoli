@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(185, 183, 183);
+}
+
+
+/* Header */
+
+header {
+  height: 10vh;
+  color: white;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+
+  min-width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+nav p {
+  text-decoration: none;
+  color: white;
+
+  min-width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+header nav .logo {
+  font-size: 25px;
+}
+
+header nav .menu {
+  font-size: 18px;
+}
+
+
+/* Main */
+
+main .text {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+
+main .text p:nth-child(1) {
+  font-weight: bold;
+  color: black;
+  font-size: 70px;
+}
+main .text p:nth-child(2) {
+  color: #493333;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+main .text button {
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 20px 10px;
+}
+
+main .hire-btn {
+  border: 2px solid #373636;
+  color: #373636;
+  background-color: transparent;
+}
+
+main .down-cv {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
+main .about {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+
+  margin: 30% 10% 5%;
+  padding: 3%;
+}
+
+main .about p:nth-child(1) {
+  color: #403e3e;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 0px;
+}
+
+main .about p:nth-child(2) {
+  color: #3e3d3d;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 5px;
+}
+
+main .about p:nth-child(3),
+.about p:nth-child(4) {
+  color: #7e7d7d;
+  font-size: 16px;
+}
+
+main .about button {
+  width: 120px;
+  height: 40px;
+  margin-right: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #262525;
+}
+
+
+main .services {
+  height: 600px;
+  background-color: white;
+  padding: 2% 10% 0px 10%;
+}
+
+main .services-text p:nth-child(1) {
+  font-weight: bold;
+  color: #1d1c1c;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+main .services-text p:nth-child(2) {
+  font-weight: bold;
+  color: #3e3d3d;
+  font-size: 15px;
+  line-height: 5px;
+}
+
+main .services-text p:nth-child(3) {
+  font-family: calibri;
+  color: #7e7d7d;
+}
+
+main .services-text {
+  width: 400px;
+  height: 6vh;
+  margin: 40px 0px;
+}
+
+main .services-text p {
+  padding: 10px 0;
+}
+
+.box-1 { grid-area: box1; }
+.box-2 { grid-area: box2; }
+.box-3 { grid-area: box3; }
+
+main .box-container {
+  display: grid;
+  grid-template-areas: 
+  'box1 box2 box3';
+  
+  gap: 1rem;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 300px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
+  background-color: black;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 4px;
+
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span {
+  width: 50px;
+  height: 45px;
+  border-radius: 30%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2) {
+  color: white;
+  font-size: 23px;
+  line-height: 0px;
+  padding-top: 15px;
+}
+
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3) {
+  color: #8f8f8f;
+  text-align: center;
+  width: 230px;
+  margin: 0px 0px 20px 0px;
+  padding-top: 15px;
+}
+
+.box-1 button,
+.box-2 button,
+.box-3 button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer .contact-me {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+footer .contact-me p {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+footer .contact-me button {
+  width: 180px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+/* ContactPage */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.container button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
