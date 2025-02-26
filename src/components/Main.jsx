@@ -1,11 +1,12 @@
+import {Link} from "react-router-dom";
+
 export default function Main(){
     return(
         <main>
             <article class="text">
                 <p>Soc en Francesc</p>
                 <p>Disenyador web profesional <br />& Desenvolupador web</p>
-                <button class="hire-btn">Contracta'm</button>
-                <button class="down-cv">Descarrega CV</button>
+                <Link to="/contacte"><button class="hire-btn">Contacta'm</button></Link>
             </article>
 
             <article class="about">
@@ -14,7 +15,7 @@ export default function Main(){
                 <p>
                     Hola, em dic Francesc. Sóc Desenvolupador i també dissenyador. Si tens algun projecte o si vols
                     fer un programari per als teus bussiness contacta'm. Ho faig com més aviat millor. T'agradarà molt la meva feina, si no
-                    ho fa el canvi fins a t'agradi.
+                    ho fa el canviaré fins que t'agradi.
                 </p> <br />
 
                 <p>
@@ -22,9 +23,8 @@ export default function Main(){
                     per al teu negoci
                     contacta amb mi. Realitzo el teu projecte el més aviat possible.
                 </p> <br />
-                
-                <button>Contracta'm</button>
-                <button>Descarregar CV</button>
+
+                <Link to="/contacte"><button>Contacta'm</button></Link>
             </article>
         </main>
     )
